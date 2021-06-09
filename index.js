@@ -10,8 +10,11 @@ function saturdayFun(activity = "roller-skate") {
  }
  mondayWork();
 
- function wrapAdjective(lucky = "special") {
-    const flair = wrapAdjective("*")
-    return `You are ${lucky}.`
+ function wrapAdjective(style = "*") {
+    return function(phrase) {
+        return `You are ${style}${phrase}${style}!`
+    }
+      
+    
  }
- wrapAdjective(flair);
+ 
